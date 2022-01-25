@@ -4,6 +4,10 @@
   "description": "",
   "license": "",
   "scripts": {
+    "prepare": "husky install",
+    "format": "prettier --write 'app/**/*'",
+    "lint": "eslint --fix 'app/**/*'",
+    "fix": "npm run format && npm run lint",
     "build": "remix build",
     "dev": "remix dev",
     "postinstall": "remix setup node",
