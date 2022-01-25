@@ -33,13 +33,6 @@ rules:
   ]
   react/jsx-filename-extension: ['error', {'extensions': ['.jsx', '.tsx']}]
   react/jsx-uses-react: 'off'
-  react/react-in-jsx-scope: 'off'
-  prettier/prettier: [
-    'error',
-    {
-      'singleQuote': false,
-      'trailingComma': "none"
-    }
-  ]
+  react/react-in-jsx-scope: 'off' 
 
 
