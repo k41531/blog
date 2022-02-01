@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "husky install",
     "format": "prettier --write 'app/**/*'",
-    "lint": "eslint --fix 'app/**/*'",
+    "lint": "eslint --no-error-on-unmatched-pattern --fix 'app/**/*'",
     "fix": "npm run format && npm run lint",
     "lint-staged": "lint-staged",
     "build": "remix build",
