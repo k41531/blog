@@ -8,6 +8,7 @@ import {
   ScrollRestoration
 } from "remix";
 import type { MetaFunction } from "remix";
+import Layout from "./components/layout";
 
 export const meta: MetaFunction = () => {
   return { title: "New Remix App" };
@@ -28,9 +29,11 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
+        <Layout>
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+        </Layout>
         {process.env.NODE_ENV === "development" && <LiveReload />}
       </body>
     </html>
