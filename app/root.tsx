@@ -10,7 +10,11 @@ import type { MetaFunction } from "remix";
 import Layout from "./components/layout";
 
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
+  return {
+    title: "k41531-blog",
+    description:
+      "This is Kaisei’s blog about IT. And sometimes I may write essays too."
+  };
 };
 
 export default function App() {

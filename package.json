@@ -1,12 +1,12 @@
 {
   "private": true,
-  "name": "remix-app-template",
+  "name": "k41531-blog",
   "description": "",
   "license": "",
   "scripts": {
     "prepare": "husky install",
     "format": "prettier --write 'app/**/*'",
-    "lint": "eslint --no-error-on-unmatched-pattern --fix 'app/**/*'",
+    "lint": "eslint --fix 'app/**/*'",
     "fix": "npm run format && npm run lint",
     "lint-staged": "lint-staged",
     "build": "remix build",
