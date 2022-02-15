@@ -14,8 +14,8 @@ export default function Posts() {
       <ul>
         {posts.map((post) => {
           return (
-            <li key={post.slug}>
-              <Link to={post.slug}>{post.title}</Link>
+            <li key={post.uid}>
+              <Link to={post.uid}>{post.title}</Link>
             </li>
           );
         })}

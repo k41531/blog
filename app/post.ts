@@ -2,7 +2,7 @@ import * as prismicH from "@prismicio/helpers";
 import { client } from "./prismic";
 
 export type Post = {
-  slug: string;
+  uid: string;
   title: string;
 };
 
@@ -25,7 +25,6 @@ export async function getPosts() {
   return documents.map((document) => {
     return {
       uid: document.uid,
-      slug: document.slugs[0],
       title: prismicH.asText(document.data.title)
     };
   });
