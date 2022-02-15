@@ -1,4 +1,5 @@
 import * as prismicH from "@prismicio/helpers";
+import { marked } from "marked";
 import { client } from "./prismic";
 
 export type Post = {
@@ -16,8 +17,9 @@ export async function getPost(uid: string | undefined) {
   const title = prismicH.asText(document.data.title);
   const text = prismicH.asText(document.data.text);
   const slug = document.slugs[0];
+  const html = marked(text || "");
 
-  return { slug, title, text };
+  return { slug, title, html };
 }
 
 export async function getPosts() {

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import { useLoaderData } from "remix";
 import type { LoaderFunction } from "remix";
 import { getPost } from "~/post";
@@ -10,8 +11,7 @@ export default function PostSlug() {
   const post = useLoaderData();
   return (
     <div>
-      <h1>{post.title}</h1>
-      <p>{post.text}</p>
+      <article dangerouslySetInnerHTML={{ __html: post.html }} />
     </div>
   );
 }
