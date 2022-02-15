@@ -14,7 +14,7 @@ export default function Posts() {
       <ul>
         {posts.map((post) => {
           return (
-            <li key={post.uid}>
+            <li className="post" key={post.uid}>
               <Link to={post.uid}>{post.title}</Link>
             </li>
           );
