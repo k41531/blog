@@ -24,19 +24,6 @@ export function links() {
       href: "https://cdn.simplecss.org/simple.min.css"
     },
     {
-      rel: "preconnect",
-      href: "https://fonts.googleapis.com"
-    },
-    {
-      rel: "preconnect",
-      href: "https://fonts.gstatic.com",
-      crossOrigin: "anonymous"
-    },
-    {
-      href: "https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap",
-      rel: "stylesheet"
-    },
-    {
       rel: "stylesheet",
       href: styles
     }
