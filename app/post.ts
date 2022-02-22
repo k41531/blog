@@ -5,6 +5,7 @@ import { client } from "./prismic";
 export type Post = {
   uid: string;
   title: string;
+  date: Date;
 };
 
 export type PostMarkdownAttributes = {
@@ -23,11 +24,14 @@ export async function getPost(uid: string | undefined) {
 }
 
 export async function getPosts() {
-  const documents: Array<any> = await client.getAllByType("post");
+  const documents: Array<any> = await client.getAllByType("post", {
+    orderings: { field: "my.post.release_date", direction: "desc" }
+  });
   return documents.map((document) => {
     return {
       uid: document.uid,
-      title: prismicH.asText(document.data.title)
+      title: prismicH.asText(document.data.title),
+      date: prismicH.asDate(document.data.release_date)
     };
   });
 }

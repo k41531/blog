@@ -15,7 +15,12 @@ export default function Posts() {
         {posts.map((post) => {
           return (
             <li className="post" key={post.uid}>
-              <Link to={post.uid}>{post.title}</Link>
+              <div className="post-content">
+                <span className="date">
+                  {new Date(post.date).toLocaleDateString("ja-JP")}
+                </span>
+                <Link to={post.uid}>{post.title}</Link>
+              </div>
             </li>
           );
         })}

@@ -8,7 +8,10 @@ import {
 } from "remix";
 import type { MetaFunction } from "remix";
 import styles from "~/styles/global.css";
+import { PrismicProvider } from "@prismicio/react";
 import Layout from "./components/layout";
+
+import { client } from "./prismic";
 
 export const meta: MetaFunction = () => {
   return {
@@ -44,12 +47,14 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Layout>
-          <Outlet />
-          <ScrollRestoration />
-          <Scripts />
-        </Layout>
-        {process.env.NODE_ENV === "development" && <LiveReload />}
+        <PrismicProvider client={client}>
+          <Layout>
+            <Outlet />
+            <ScrollRestoration />
+            <Scripts />
+          </Layout>
+          {process.env.NODE_ENV === "development" && <LiveReload />}
+        </PrismicProvider>
       </body>
     </html>
   );

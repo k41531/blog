@@ -46,5 +46,13 @@ h6 {
 li.post {
   list-style-type: none;
   font-size: 1.5rem;
-  line-height: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-content {
+  display: grid;
+}
+
+.post-content .date {
+  font-size: 0.75rem;
 }
