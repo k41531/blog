@@ -23,11 +23,13 @@ export async function getPost(uid: string | undefined) {
   return { slug, title, html };
 }
 
-export async function getPosts() {
-  const documents: Array<any> = await client.getAllByType("post", {
-    orderings: { field: "my.post.release_date", direction: "desc" }
+export async function getPosts(num: number = 20) {
+  const documents = await client.getByType("post", {
+    orderings: { field: "my.post.release_date", direction: "desc" },
+    pageSize: num,
+    page: 1
   });
-  return documents.map((document) => {
+  return documents.results.map((document) => {
     return {
       uid: document.uid,
       title: prismicH.asText(document.data.title),
