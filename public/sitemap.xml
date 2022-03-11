@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
+<url>
+  <loc>https://blog.kaisei.dev/</loc>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>https://blog.kaisei.dev/posts</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://blog.kaisei.dev/posts/duckduckgo-russia-censorship</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://blog.kaisei.dev/posts/visited-hacking</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://blog.kaisei.dev/posts/rust-wasm-interactivity</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://blog.kaisei.dev/posts/favorite-web-site</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://blog.kaisei.dev/posts/webassembly-hello-world-with-wasmer</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://blog.kaisei.dev/posts/nodejs-hello-world-with-docker</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://blog.kaisei.dev/posts/rust-wasm-debug</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://blog.kaisei.dev/posts/symbol-info</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://blog.kaisei.dev/posts/rust-wasm-lifegame</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://blog.kaisei.dev/posts/rust-wasm-hello-world</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://blog.kaisei.dev/posts/quic-protocol</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://blog.kaisei.dev/posts/duckduckgo-u202e</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://blog.kaisei.dev/posts/hello-many-worlds</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://blog.kaisei.dev/posts/remix-blog</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://blog.kaisei.dev/posts/hello-world</loc>
+  <priority>0.7</priority>
+</url>
+
+</urlset>
