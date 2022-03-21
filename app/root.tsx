@@ -15,9 +15,9 @@ import { client } from "./prismic";
 
 export const meta: MetaFunction = () => {
   return {
-    title: "k41531-blog",
+    title: "k41531 | blog",
     description:
-      "This is Kaisei’s blog about IT. And sometimes I may write essays too."
+      "主にIT関連の物事を取り扱った個人的なブログです。低レイヤーから高レイヤーまで手広く触れます。"
   };
 };
 export function links() {
